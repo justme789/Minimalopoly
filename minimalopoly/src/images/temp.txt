@@ -1,0 +1,91 @@
+
+
+.gr1 {
+  width: 100px;
+  height: 50px;
+  background: rgb(45, 194, 0);
+  transform: translate(-1700px, 50px);
+}
+
+.gr2 {
+  width: 100px;
+  height: 50px;
+  background: rgb(45, 194, 0);
+  transform: translate(-1800px, 100px);
+}
+
+.cc3 {
+  width: 100px;
+  height: 50px;
+  background: rgb(114, 114, 114);
+  transform: translate(-1900px, 150px);
+}
+
+.gr3 {
+  width: 100px;
+  height: 50px;
+  background: rgb(45, 194, 0);
+  transform: translate(-2000px, 200px);
+}
+
+.stat4 {
+  width: 100px;
+  height: 50px;
+  background: rgb(151, 151, 151);
+  transform: translate(-2100px, 250px);
+}
+
+.ch3 {
+  width: 100px;
+  height: 50px;
+  background: rgb(100, 100, 100);
+  transform: translate(-2200px, 300px);
+}
+
+.db1 {
+  width: 100px;
+  height: 50px;
+  background: url('./images/PL1.png') no-repeat;
+  transform: translate(-2300px, 350px);
+}
+
+.tax2 {
+  width: 100px;
+  height: 50px;
+  background: rgb(240, 240, 240);
+  transform: translate(-2400px, 400px);
+}
+
+.db2 {
+  width: 100px;
+  height: 50px;
+  background: url('./images/PL1.png') no-repeat;
+  transform: translate(-2500px, 450px);
+}
+
+
+
+
+
+
+        
+
+   <button className="elec">Elec</button>
+    <button className="pin2">Pin2</button>
+    <button className="pin3">Pin3</button>
+    <button className="stat2">Stat2</button>
+    <button className="oran1">Oran1</button>
+    <button className="cc2">CC</button>
+    <button className="oran2">Oran2</button>
+    <button className="oran3">Oran3</button>
+
+    <button className="gr1">Gr1</button>
+    <button className="gr2">Gr2</button>
+    <button className="cc3">CC</button>
+    <button className="gr3">Gr3</button>
+    <button className="stat4">Stat4</button>
+    <button className="ch3">Chance</button>
+    <button className="db1"></button>
+    <button className="tax2">Tax</button>
+    <button className="db2">Db2</button>
+    
