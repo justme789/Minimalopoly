@@ -1,7 +1,29 @@
 .App {
   text-align: center;
 }
-
+.buy {
+  position: absolute;
+  background-color: rgb(140, 140, 140);
+  height: 75px;
+  width: 100px;
+  z-index: 995;
+  transform: translate(710px, 650px);
+}
+.auction {
+  position: absolute;
+  background-color: rgb(140, 140, 140);
+  height: 75px;
+  width: 100px;
+  z-index: 995;
+  transform: translate(830px, 650px);
+}
+.screen {
+  position: absolute;
+  background-color: rgba(255, 11, 11, 0);
+  height: 100%;
+  width: 100%;
+  z-index: 994;
+}
 .board {
   display: block;
   position: absolute;

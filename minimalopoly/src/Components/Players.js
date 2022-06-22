@@ -1,44 +1,37 @@
 import React, { Component } from "react";
-import { Player } from "../Player.js";
 
-var colors = ["red", "green", "blue", "black", "white"];
-var p0 = new Player(0, colors[0]);
-var p1 = new Player(1, colors[1]);
-var p2 = new Player(2, colors[2]);
-var playerss = [p0, p1, p2];
+const colors = ["yellow", "green", "blue", "black", "white", "purple"];
 
 export default class Players extends Component {
-  renderPlayers = () => {
-    var renderedPlayers = [];
-    for (var i = 0; i < playerss.length; i++) {
-      var id = "palyer" + i;
-      renderedPlayers.push(
-        <div
-          id={id}
-          key={id}
-          style={{
-            position: "absolute",
-            backgroundColor: playerss[i].color,
-            width: "30px",
-            height: "30px",
-            zIndex: "989",
-            transform:
-              "translate(" +
-              this.state.currentPosX +
-              "px, " +
-              this.state.currentPosY +
-              "px)",
-          }}
-        ></div>
-      );
-    }
-    return renderedPlayers;
-  };
-
   constructor(props) {
-    super(props);
+    super(props)
+    this.state = {
+      name : "player",
+      owned : [],
+      money : 1000,
+      tile : this.props.tile,
+      turn : false,
+      x : this.props.x, 
+      y : this.props.y
+    }
+  }
+  changeCoords = () => {
+    console.log("changeCoords")
   }
   render() {
-    return <div></div>;
+    return <div className={this.props.className} id={this.props.id} style={{
+      display: this.props.style,
+      position: "absolute",
+      backgroundColor: colors[this.props.playerNum],
+      width: "30px",
+      height: "30px",
+      zIndex: "989",
+      transform:
+        "translate(" +
+        this.props.x +
+        "px, " +
+        this.props.y +
+        "px)",
+    }}></div>;
   }
 }
