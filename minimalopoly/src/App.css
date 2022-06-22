@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+
 .board {
   display: block;
   position: absolute;
@@ -8,6 +9,13 @@
   height: 100%;
   width: 100%;
   z-index: 0;
+}
+
+.add {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(850px, 550px);
 }
 
 .go {
@@ -379,4 +387,18 @@
   position: inherit;
   background: #c0c0c0;
   transform: translate(770px, 200px);
+}
+
+.die2 {
+  position: inherit;
+  width: 70px;
+  height: 70px;
+  transform: translate(800px, 100px);
+}
+
+.die1 {
+  position: inherit;
+  width: 70px;
+  height: 70px;
+  transform: translate(700px, 100px);
 }
